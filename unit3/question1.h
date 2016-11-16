@@ -20,16 +20,23 @@ void question1() {
 }
 
 int fun(int n, int xx[M][M]){
-    int Middle = n / 2, SumDiagnals = 0, SumMatrix = 0;
+    int Middle = n / 2, SumDiagnals = 0;
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
-            //条件或使循环经过中心交叉点只纪录1次
+            /*条件或使循环经过中心交叉点只纪录1次
             if (i == j || i == (n - j - 1)) {
                 SumDiagnals += xx[i][j];
+            }*/
+            //单独计算两条对角线，使中心点2次都纳入计算
+            if (i == j) {
+                SumDiagnals += xx[i][j];
             }
-            SumMatrix += xx[i][j];
+            if (i == (n - j - 1)) {
+                SumDiagnals += xx[i][j];
+            }
+            printf("%d ", xx[i][j]);
         }
+        printf("\n");
     }
-    printf("The sum of all elements %d.", SumMatrix);
     return SumDiagnals;
 }
