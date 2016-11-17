@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include "question1.h"
+#include "question2.h"
 
 void main () {
     int selected;
@@ -18,6 +19,7 @@ void main () {
             question1();
             break;
         case 2:
+        question2();
             break;
         case 3:
             break;

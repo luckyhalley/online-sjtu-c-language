@@ -200,8 +200,17 @@ main()
     printf("\nThe sum of all elements on 2 diagnals is %d.", fun(M,aa));
 }
 ```
-
-
+* 使用递归方法求解斐波那契数列的前30项
+```
+//简单到不知道说啥好了....前面就写过好像...
+int fib(int index) {
+    if (index <= 2) {
+        return index - 1;
+    } else {
+        return (fib(index - 2) + fib(index - 1));
+    }
+}
+```
 
 
 
