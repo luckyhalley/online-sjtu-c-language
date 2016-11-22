@@ -5,7 +5,6 @@
 //  Created by 严明坤 on 16/11/15.
 //  Copyright © 2016年 严明坤. All rights reserved.
 //  给定程序中函数fun的功能是：输出M行M列的整数方阵，然后求两条对角线上的元素之和，要求返回此和数
-#include <stdio.h>
 #define M  5
 
 void question1() {
