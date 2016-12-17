@@ -233,7 +233,7 @@ int fib(int index) {
     9850       0.9905	        -1.95%           9756            -292
     9850       1.0235           3.33%          10081              31
     Average Net Value in this week = 1.00098
-
+ 
 
 
 
