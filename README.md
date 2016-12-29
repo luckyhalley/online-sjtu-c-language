@@ -111,7 +111,7 @@ void main(){
 ```c
 #include <stdio.h>
 void main() {
-    void bubbleSort(), qSort();
+    void bubbleSort();
     int numbers[] = {29, 66, 19, 98, 14, 7, 69, 3, 59, 23};
     printf("冒泡排序算法实现结果\n");
     bubbleSort(numbers);
